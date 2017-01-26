@@ -1,0 +1,116 @@
+<!--
+Developer:Khoi Nguyen
+Date: 1/23/2017
+UCSD Code Bootcamp: Homework #2: Part 2
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Linking viewport, regular zoom 100% across various devices.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> About Me </title>
+	<!--Linking bootstrap css to leverage classes for RWD-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!--Link after boostrap so that it does not overwrite my styles.-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<!--header wrapper to control 960px spec.-->
+	<header>
+		<!--choosing mostly "sm", why? so that style rows will not collapse until >768px threshold is reached. Keeping multiple devices in mind.-->
+		<div class="container-fluid">	
+			<div class="row" id="masterHeader">
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-6 text-center" id="logo">
+							<h1>Khoi Nguyen</h1>
+						</div>
+						<div class="col-sm-6">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="row" id="pageLinks">
+						<div class="col-xs-4 text-center">
+							<a href="index.html">About</a>
+						</div>
+						<div class="col-xs-4 text-center" id="bars">
+							<a href="portfolio.html">Portfolio</a>
+						</div>
+						<div class="col-xs-4 text-center">
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
+				</div>	
+			</div>			
+		</div>
+	</header>>
+	<div id="contentWrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-7" id="mainContent">
+					<header>
+						<h1 id="contentHeader">Contact</h1>
+					</header>
+					<!--Form area-->
+			      	<form id="contact-form">
+			         <ul>
+			          	<li>
+			            	<label for="name">Name</label>
+			            	<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+			          	</li>
+			          	<li>
+			            	<label for="email">Email</label>
+			            	<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+			          	</li>
+			          	<li>
+			            	<label for="message">Message</label>
+			            	<textarea id="message" name="message" required="required"></textarea>
+			          	</li>
+			       	 </ul>
+			        	<a href="#" class="btn btn-primary btn-lg">
+			        		<span> Submit </span>
+			        	</a>
+			       	</form>
+				</div>
+				<div class="col-sm-4 col-sm-offset-1" id="sideBar">
+					<header>
+						<h3 class="text-center">Connect With Me</h3>
+					</header>
+					<div class="row" id="icons">
+						<div class="col-xs-4 text-center">
+							<a href="https://github.com/khoin084" target="_blank">
+							<img id="gitHub" src="assets/images/github.png" class="rotateIcon" alt="Smiley face" height ="50" width="50">
+							</a>
+						</div>
+						<div class="col-xs-4 text-center">
+							<a href="https://www.linkedin.com/in/khoi-nguyen-866a8929?trk=nav_responsive_tab_profile" target="_blank">
+							<img id="linkedin" src="assets/images/linkedin_square_color.png" class="rotateIcon" alt="Smiley face" height ="50" width="50">
+							</a>
+						</div>
+						<div class="col-xs-4 text-center">
+							<a href="http://stackoverflow.com/users/7329248/khoi" target="_blank">
+							<img id="fb" src="assets/images/stackoverflow.png" class="rotateIcon" alt="Smiley face" height ="50" width="50">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<div id="tealBand"></div>
+				<footer>
+					&copy; Copyright 2017 Khoi Nguyen
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

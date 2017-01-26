@@ -1,0 +1,160 @@
+/**
+*Developer:Khoi Nguyen
+*Date: 1/23/2017
+*UCSD Code Bootcamp: Homework #2: Part 2
+**/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 34px;
+  background: url("../images/skulls.png");
+}
+h3 {
+  color: #4aaaa5;
+}
+h4 {
+  margin: 0;
+}
+/*all headers get a bottom border style*/
+header {
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+#masterHeader {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#logo {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+#pageLinks .col-xs-4 {
+  margin-top: 20px;
+  padding: 0;
+}
+#pageLinks a {
+  color: #999;
+  text-decoration: none;
+  line-height: 18px;
+}
+#bars {
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+#contentWrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#mainContent {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+#contentHeader {
+  color: #4aaaa5;
+}
+#myPic {
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+#sideBar {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+#icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#tealBand {
+  /*explicitly define height, it is collapsed by default, perhaps
+  due to the boostrap floats?*/
+  height: 10px;
+  background: #4aaaa5;
+}
+footer {
+  color: #ccc;
+  background: #666;
+}
+/***********************************
+*Portfolio
+************************************/
+
+/*for every bootstrap class .col-sm-6
+in the pic id, apply the following styles.*/
+#pics .col-sm-6 {
+  padding: 20px 20px 20px 40px;
+}
+#pics img {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+.label {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  width: 200px;
+  color: white;
+  background: #4aaaa5;
+}
+
+/***********************************
+*Contact
+************************************/
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email]
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
